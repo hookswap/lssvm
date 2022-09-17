@@ -37,6 +37,49 @@ See the diagram below for a high-level overview, credits go to [IT DAO](https://
 
 To do something...
 
-# Built with HardHat
+# Built with HardHat Template
 
-To do something...
+**Template repository for getting started quickly with HardHat**
+
+## Building and testing
+
+```sh
+npx hardhat compile
+npm hardhat test
+```
+
+## Deploying
+
+Environment variables under the `.env` file are automatically loaded (see [`.env.example`](./.env.example)).
+
+You must have set your private key as the `PRIVATE_KEY` environment variable to deploy the protocol.
+
+You can use any remote node provider for the Mainnet & Goerli network deployments.
+You must have set your node url as the `MAINNET_URL` or `GOERLI_URL` enviroment variable in order to
+deploy to these networks.
+
+### Mainnet
+
+```sh
+npx run --network mainnet scripts/deploy-protocol.ts
+```
+
+### Goerli
+
+```sh
+npx run --network goerli scripts/deploy-protocol.ts
+```
+
+### Local Testnet
+
+```sh
+npx hardhat node
+npx run scripts/deploy-protocol.ts
+```
+
+## Hatdhat Resources
+
+* [HardHat](https://hardhat.org/)
+    * [Guides to get started](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
+    * [Hardhat Network](https://hardhat.org/hardhat-network/docs/overview)
+    * [Plugin list](https://hardhat.org/hardhat-runner/plugins)
