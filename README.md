@@ -33,9 +33,7 @@ See the diagram below for a high-level overview, credits go to [IT DAO](https://
 
 ![overview of lssvm architecture](./sudo-diagram.png)
 
-### Testing
-
-To do something...
+---
 
 # Built with HardHat Template
 
@@ -45,7 +43,7 @@ To do something...
 
 ```sh
 npx hardhat compile
-npm hardhat test
+npx hardhat test
 ```
 
 ## Deploying
@@ -61,23 +59,23 @@ deploy to these networks.
 ### Mainnet
 
 ```sh
-npx run --network mainnet scripts/deploy-protocol.ts
+npx hardhat run --network mainnet scripts/deploy-protocol.ts
 ```
 
 ### Goerli
 
 ```sh
-npx run --network goerli scripts/deploy-protocol.ts
+npx hardhat run --network goerli scripts/deploy-protocol.ts
 ```
 
 ### Local Testnet
 
 ```sh
 npx hardhat node
-npx run scripts/deploy-protocol.ts
+npx hardhat run scripts/deploy-protocol.ts
 ```
 
-## Hatdhat Resources
+## Hardhat Resources
 
 * [HardHat](https://hardhat.org/)
     * [Guides to get started](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
