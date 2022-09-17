@@ -72,7 +72,7 @@ npx hardhat run --network goerli scripts/deploy-protocol.ts
 
 ```sh
 npx hardhat node
-npx hardhat run scripts/deploy-protocol.ts
+npx hardhat run --network localhost scripts/deploy-protocol.ts
 ```
 
 ## Hardhat Resources
