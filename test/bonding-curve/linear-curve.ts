@@ -10,7 +10,6 @@ describe('LinearCurve', function () {
   before(async function () {
     const LinearCurve = await ethers.getContractFactory('LinearCurve');
     curve = await LinearCurve.deploy();
-    await curve.deployed();
   });
 
   it('getBuyInfoExample', async function () {

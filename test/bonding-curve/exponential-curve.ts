@@ -10,7 +10,6 @@ describe('ExponentialCurve', function () {
   before(async function () {
     const ExponentialCurve = await ethers.getContractFactory('ExponentialCurve');
     curve = await ExponentialCurve.deploy();
-    await curve.deployed();
   });
 
   it('getBuyInfoExample', async function () {
